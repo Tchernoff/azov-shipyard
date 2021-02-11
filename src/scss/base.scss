@@ -1,6 +1,7 @@
 @import "_reset";
 @import "_variables";
 @import "_typography";
+@import "owl-carousel";
 
 
 /* BASIC STYLES */
@@ -123,7 +124,7 @@ a {
 }
 
 .main {
-  min-height: calc(100vh - 323px);
+  min-height: calc(100vh - 322px);
 }
 
 .section {
@@ -430,6 +431,7 @@ a {
 .news {
   &__papper {
     max-width: 344px;
+    padding: 0 2px;
   }
 
   &__header {
@@ -441,11 +443,6 @@ a {
 
   &__аrchive-link {
     margin-left: 40px;
-  }
-
-  &__carousel {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -478,6 +475,42 @@ a {
 
   &__title {
     margin-bottom: 8px;
+  }
+}
+
+.pagination {
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: $blue;
+    color: $white;
+    border-radius: 5px;
+
+    & + & {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $light-blue;
+    }
+
+    &:focus {
+      color: $white;
+    }
+
+    &--active {
+      background-color: $dark-blue;
+    }
+  }
+
+  &__list {
+    display: flex;
+    padding: 100px 0;
   }
 }
 
@@ -535,4 +568,11 @@ a {
   &__wrapper {
     overflow: hidden;
   }
+}
+
+/* Customize Owl-Carousel */
+
+.owl-carousel .owl-item img {
+ display: inline-block;
+ width: inherit;
 }

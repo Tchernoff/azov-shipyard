@@ -43,15 +43,58 @@
             <a class="news__аrchive-link" href="news-list.html">Смотреть архив</a>
           </div>
           <div class="news__nav-buttons arrow-navigation">
-            <button class="arrow-navigation__button button button--arrow">
+            <button class="arrow-navigation__button button button--arrow customPrevBtn">
               <img class="button--arrow__img" src="img/left_arrow.svg" alt="arrow backward">
             </button>
-            <button class="arrow-navigation__button button button--arrow">
+            <button class="arrow-navigation__button button button--arrow customNextBtn">
               <img class="button--arrow__img" src="img/right_arrow.svg" alt="arrow forward">
             </button>
           </div>
         </div>
-        <div class="news__carousel">
+        <div class="owl-carousel owl-carousel1">
+          <div>
+            <div class="news__papper papper">
+              <div class="papper__date">
+                05.08.2019
+              </div>
+              <img class="papper__img" src="img/news1.png" alt="news image">
+              <p class="papper__content">
+                Начаты ремонтные работы на пограничном сторожевом катере проекта КС-701 (заводской № 240) пска-457
+              </p>
+              <button class="papper__button button button--link">Подробнее</button>
+            </div>
+          </div>
+          <div>
+            <div class="news__papper papper">
+              <div class="papper__date">
+                05.08.2019
+              </div>
+              <img class="papper__img" src="img/news2.png" alt="news image">
+              <p class="papper__content">
+                Начаты ремонтные работы на б/т "Тайфун". Запланировано выполнить ремонт винторулевого комплекса и
+                произвести малярные работы.
+              </p>
+              <button class="papper__button button button--link">Подробнее</button>
+            </div>
+          </div>
+          <div>
+            <div class="news__papper papper">
+              <div class="papper__date">
+                05.08.2019
+              </div>
+              <img class="papper__img" src="img/news3.png" alt="news image">
+              <p class="papper__content">
+                На т/х "Надёжный" произведены работы по очистки и окраски подводной части наружной обшивки и надводного
+                борта в 3 слоя
+              </p>
+              <button class="papper__button button button--link">Подробнее</button>
+            </div>
+          </div>
+          <div> Your Content 4</div>
+          <div> Your Content 5</div>
+          <div> Your Content 6</div>
+        </div>
+        <!-- <div class="news__carousel">
           <div class="news__papper papper">
             <div class="papper__date">
               05.08.2019
@@ -84,7 +127,7 @@
             </p>
             <button class="papper__button button button--link">Подробнее</button>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="section">
@@ -188,61 +231,71 @@
             </h2>
           </div>
           <div class="section__block arrow-navigation">
-            <button class="arrow-navigation__button button button--arrow">
+            <button class="arrow-navigation__button button button--arrow customPrevBtn2">
               <img class="button--arrow__img" src="img/left_arrow.svg" alt="arrow backward">
             </button>
-            <button class="arrow-navigation__button button button--arrow">
+            <button class="arrow-navigation__button button button--arrow customNextBtn2">
               <img class="button--arrow__img" src="img/right_arrow.svg" alt="arrow forward">
             </button>
           </div>
         </div>
         <div class="section__block docs-list">
-          <div class="docs-list__item docs-papper" id="doc1" onclick="showDocument(this)">
-            <h6 class="docs-papper__title">
-              Свидетельство
-            </h6>
-            <p class="docs-papper__text">
-              Свидетельство о признании испытательной лаборатории
-            </p>
-            <div class="docs-papper__display">
-              <img src="img/eye.png" alt="глаз">
-              <span>смотреть</span>
+          <div class="owl-carousel2 owl-carousel">
+            <div>
+              <div class="docs-list__item docs-papper" id="doc1" onclick="showDocument(this)">
+                <h6 class="docs-papper__title">
+                  Свидетельство
+                </h6>
+                <p class="docs-papper__text">
+                  Свидетельство о признании испытательной лаборатории
+                </p>
+                <div class="docs-papper__display">
+                  <img src="img/eye.png" alt="глаз">
+                  <span>смотреть</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="docs-list__item docs-papper" id="doc2" onclick="showDocument(this)">
-            <h6 class="docs-papper__title">
-              Свидетельство
-            </h6>
-            <p class="docs-papper__text">
-              Свидетельство о признании испытательной лаборатории
-            </p>
-            <div class="docs-papper__display">
-              <img src="img/eye.png" alt="глаз">
-              <span>смотреть</span>
+            <div>
+              <div class="docs-list__item docs-papper" id="doc1" onclick="showDocument(this)">
+                <h6 class="docs-papper__title">
+                  Свидетельство
+                </h6>
+                <p class="docs-papper__text">
+                  Свидетельство о признании испытательной лаборатории
+                </p>
+                <div class="docs-papper__display">
+                  <img src="img/eye.png" alt="глаз">
+                  <span>смотреть</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="docs-list__item docs-papper" id="doc3" onclick="showDocument(this)">
-            <h6 class="docs-papper__title">
-              Свидетельство
-            </h6>
-            <p class="docs-papper__text">
-              Свидетельство о признании испытательной лаборатории
-            </p>
-            <div class="docs-papper__display">
-              <img src="img/eye.png" alt="глаз">
-              <span>смотреть</span>
+            <div>
+              <div class="docs-list__item docs-papper" id="doc1" onclick="showDocument(this)">
+                <h6 class="docs-papper__title">
+                  Свидетельство
+                </h6>
+                <p class="docs-papper__text">
+                  Свидетельство о признании испытательной лаборатории
+                </p>
+                <div class="docs-papper__display">
+                  <img src="img/eye.png" alt="глаз">
+                  <span>смотреть</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="docs-list__item docs-papper" id="doc4" onclick="showDocument(this)">
-            <h6 class="docs-papper__title">
-              Свидетельство
-            </h6>
-            <p class="docs-papper__text">
-              Свидетельство о признании испытательной лаборатории
-            </p>
-            <div class="docs-papper__display">
-              <img src="img/eye.png" alt="глаз">
-              <span>смотреть</span>
+            <div>
+              <div class="docs-list__item docs-papper" id="doc1" onclick="showDocument(this)">
+                <h6 class="docs-papper__title">
+                  Свидетельство
+                </h6>
+                <p class="docs-papper__text">
+                  Свидетельство о признании испытательной лаборатории
+                </p>
+                <div class="docs-papper__display">
+                  <img src="img/eye.png" alt="глаз">
+                  <span>смотреть</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -277,7 +330,7 @@
     </div>
   </footer>
   <div style="display: none;" class="modal" id="modal">
-    <img class="modal__image"  id="modalImage" src="" alt="документ">
+    <img class="modal__image" id="modalImage" src="" alt="документ">
     <div>
       <button class="button modal__button" class="button" onclick="closeModal()">
         <img src="img/cross.svg" alt="закрыть">
@@ -285,6 +338,40 @@
     </div>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel1").owlCarousel({
+        items: 3,
+        loop: true,
+        checkVisible: true,
+        autoplay: true,
+      });
+      // Go to the next item
+      $('.customNextBtn').click(function () {
+        $('.owl-carousel1').trigger('next.owl.carousel');
+      })
+      // Go to the previous item
+      $('.customPrevBtn').click(function () {
+        $('.owl-carousel1').trigger('prev.owl.carousel');
+      })
+
+      $(".owl-carousel2").owlCarousel({
+        items: 4,
+        loop: true,
+        checkVisible: true,
+        autoplay: true,
+      });
+      $('.customNextBtn2').click(function () {
+        $('.owl-carousel2').trigger('next.owl.carousel');
+      })
+      // Go to the previous item
+      $('.customPrevBtn2').click(function () {
+        $('.owl-carousel2').trigger('prev.owl.carousel');
+      })
+    });
+  </script>
 </body>
 
 </html>
