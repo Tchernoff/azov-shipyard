@@ -302,7 +302,7 @@ a {
   flex-direction: column;
   max-width: 247px;
   height: 210px;
-  padding: 0  20px;
+  margin: 0 20px;
   text-align: center;
   cursor: pointer;
   background-color: $white;
@@ -435,8 +435,7 @@ a {
 
 .news {
   &__papper {
-    max-width: 344px;
-    padding: 0 2px;
+    margin: 0 22px;
   }
 
   &__header {
@@ -556,6 +555,7 @@ a {
 }
 
 .papper {
+
   &__content {
     margin: 16px 0;
   }
@@ -569,7 +569,6 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 344px;
     height: 200px;
 
     img {

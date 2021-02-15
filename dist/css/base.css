@@ -613,7 +613,7 @@ a {
   flex-direction: column;
   max-width: 247px;
   height: 210px;
-  padding: 0  20px;
+  margin: 0 20px;
   text-align: center;
   cursor: pointer;
   background-color: #FFFFFF;
@@ -697,8 +697,7 @@ a {
     margin: 10px 20px; }
 
 .news__papper {
-  max-width: 344px;
-  padding: 0 2px; }
+  margin: 0 22px; }
 
 .news__header {
   display: flex;
@@ -789,7 +788,6 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 344px;
   height: 200px; }
   .papper__img img {
     -o-object-fit: cover;
