@@ -3,6 +3,8 @@
 @import "_typography";
 @import "owl-carousel";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 
 /* BASIC STYLES */
 
@@ -233,6 +235,7 @@ a {
 }
 
 .card {
+
   &__title {
     margin-bottom: 8px;
   }
@@ -241,7 +244,7 @@ a {
     color: $darker-grey;
     margin-bottom: 16px;
 
-    & + .card__subtitle {
+    & + & {
       margin-bottom: 0;
       margin-top: 16px;
     }
@@ -249,7 +252,9 @@ a {
 }
 
 .contacts {
+
   &__adress {
+
     h5 + h5 {
       margin-top: 24px;
     }
@@ -446,9 +451,45 @@ a {
   }
 }
 
+.news-list {
+
+  &__item {
+    margin-bottom: 60px;
+  }
+}
+
 .news-page {
+  
+  &__album {
+    max-width: 926px;
+    display: flex;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 344px;
+    height: 216px;
+    margin: 24px 0 60px 0;
+
+    & + & {
+      margin-left: 44px;
+    }
+  
+    img {
+      object-fit: cover;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+
+
   &__body {
-    max-width: 1000px;
+    margin-bottom: 100px;
   }
 
   &__header {
@@ -457,6 +498,7 @@ a {
 
   &__paragraph {
     margin-bottom: 24px;
+    max-width: 926px;
   }
 
   &__title {
@@ -522,6 +564,23 @@ a {
   &__date {
     margin-bottom: 4px;
   }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 344px;
+    height: 200px;
+
+    img {
+      object-fit: cover;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
 }
 
 .services {
@@ -572,7 +631,7 @@ a {
 
 /* Customize Owl-Carousel */
 
-.owl-carousel .owl-item img {
+.owl-carousel2 .owl-item img {
  display: inline-block;
  width: inherit;
 }
